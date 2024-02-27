@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Site para a Marcenio</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="">
+  
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="index.html">For You</a>
+        </li>
+        <li>
+          <a href="carta.html">Cartas</a>
+        </li>
+        <li>
+          <a href="presente.html">Presente</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="card-container" onclick="flipCard(this)">
+    <div class="card">
+      <div class="front">
+        <p>Um toque de elegância ou um mundo de praticidade?</p>
+      </div>
+      <div class="back">
+        <img src="bolsa.png" alt="Card 1 Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container" onclick="flipCard(this)">
+    <div class="card">
+      <div class="front">
+        <p>Um toque no Card revelará um presente digital surpreendente. A aventura começa com um clique!</p>
+      </div>
+      <div class="back">
+        <img src="livro.png" alt="Card 2 Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container" onclick="flipCard(this)">
+    <div class="card">
+      <div class="front">
+        <p>Sob o véu do suspense, aguarda o presente que fará seu coração dançar. A descoberta é sua!".</p>
+      </div>
+      <div class="back">
+        <img src="vestido.png" alt="Card 3 Image">
+      </div>
+    </div>
+  </div>
+  
+ 
+  <footer class="rodape">
+    <p>&copy;Rau Souza</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="min.js"></script>
+</body>
+
+</html>

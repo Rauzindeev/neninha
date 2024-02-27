@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: #F3D7CA;
+}
+
+.cabecalho{
+  display: flex;
+  background-color: #F5EEE6;
+}
+
+.menu{
+  display: flex;
+  padding-left: 70px;
+  margin: 15px;
+  gap: 2em;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+main{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.musicas{
+  margin-top: 30px;
+    position: relative;
+    width:400px;
+    height:600px;
+    background:#FFF8E3;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
+    overflow:hidden;
+}
+
+.gallery__container{
+    margin: 20px;
+    position: relative;
+    width:90%;
+    background:#FFF8E3;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,.4);
+    overflow:hidden;
+}
+
+.carousel{
+  width: 110%;
+}
+
+.music__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.container{
+  margin: 10px;
+  position: relative;
+  width:430px;
+  height:1300px;
+  background:#FFF8E3;
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+  overflow:hidden;
+}
+
+.presente__container{
+  margin: 10px;
+  position: relative;
+  width:430px;
+  height:1100px;
+  background:#FFF8E3;
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+  overflow:hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+  margin: 110px;
+  background-color: #FFF8E3;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  width: 200px;
+  height: 300px;
+  font-size: 12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.rodape{
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #F5EEE6;
+  text-align: center;
+}
